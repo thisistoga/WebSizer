@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>WebSizer</h1>
+    <p class="current-size" id="currentSize">Loading...</p>
+  </div>
+
+  <div class="section">
+    <h2>Mobile</h2>
+    <div class="size-grid">
+      <button class="size-btn" data-width="320" data-height="568">
+        <span class="label">iPhone SE</span>
+        <span class="dims">320 &times; 568</span>
+      </button>
+      <button class="size-btn" data-width="375" data-height="667">
+        <span class="label">iPhone 6/7/8</span>
+        <span class="dims">375 &times; 667</span>
+      </button>
+      <button class="size-btn" data-width="390" data-height="844">
+        <span class="label">iPhone 12/13</span>
+        <span class="dims">390 &times; 844</span>
+      </button>
+      <button class="size-btn" data-width="412" data-height="915">
+        <span class="label">Pixel 7</span>
+        <span class="dims">412 &times; 915</span>
+      </button>
+      <button class="size-btn" data-width="360" data-height="800">
+        <span class="label">Galaxy S21</span>
+        <span class="dims">360 &times; 800</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Tablet</h2>
+    <div class="size-grid">
+      <button class="size-btn" data-width="768" data-height="1024">
+        <span class="label">iPad Mini</span>
+        <span class="dims">768 &times; 1024</span>
+      </button>
+      <button class="size-btn" data-width="810" data-height="1080">
+        <span class="label">iPad 10th Gen</span>
+        <span class="dims">810 &times; 1080</span>
+      </button>
+      <button class="size-btn" data-width="1024" data-height="1366">
+        <span class="label">iPad Pro 12.9"</span>
+        <span class="dims">1024 &times; 1366</span>
+      </button>
+      <button class="size-btn" data-width="800" data-height="1280">
+        <span class="label">Galaxy Tab S8</span>
+        <span class="dims">800 &times; 1280</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Desktop</h2>
+    <div class="size-grid">
+      <button class="size-btn" data-width="1280" data-height="720">
+        <span class="label">HD</span>
+        <span class="dims">1280 &times; 720</span>
+      </button>
+      <button class="size-btn" data-width="1366" data-height="768">
+        <span class="label">Laptop</span>
+        <span class="dims">1366 &times; 768</span>
+      </button>
+      <button class="size-btn" data-width="1440" data-height="900">
+        <span class="label">Desktop</span>
+        <span class="dims">1440 &times; 900</span>
+      </button>
+      <button class="size-btn" data-width="1920" data-height="1080">
+        <span class="label">Full HD</span>
+        <span class="dims">1920 &times; 1080</span>
+      </button>
+      <button class="size-btn" data-width="2560" data-height="1440">
+        <span class="label">QHD</span>
+        <span class="dims">2560 &times; 1440</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="section custom-section">
+    <h2>Custom</h2>
+    <div class="custom-inputs">
+      <input type="number" id="customWidth" placeholder="Width" min="200" max="7680">
+      <span class="times">&times;</span>
+      <input type="number" id="customHeight" placeholder="Height" min="200" max="4320">
+      <button class="apply-btn" id="applyCustom">Apply</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
