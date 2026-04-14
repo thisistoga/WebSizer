@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build artifacts / packaging
+*.zip
+*.crx
+*.pem
+dist/
+build/
+
+# Node (in case tooling is added later)
+node_modules/
+package-lock.json
+yarn.lock
