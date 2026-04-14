@@ -36,6 +36,7 @@ Unlike most resize extensions that just call `window.resizeTo()` and leave you w
 
 **Social**
 - Portrait Post (1080 × 1350)
+- Square Post (1080 × 1080)
 
 Plus a custom width × height input.
 
