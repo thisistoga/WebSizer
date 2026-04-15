@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.getElementById("applyCustom").addEventListener("click", () => {
+  const applyCustom = () => {
     const width = parseInt(document.getElementById("customWidth").value, 10);
     const height = parseInt(document.getElementById("customHeight").value, 10);
     if (width > 0 && height > 0) {
@@ -21,6 +21,17 @@ document.addEventListener("DOMContentLoaded", () => {
         () => window.close()
       );
     }
+  };
+
+  document.getElementById("applyCustom").addEventListener("click", applyCustom);
+
+  ["customWidth", "customHeight"].forEach((id) => {
+    document.getElementById(id).addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        applyCustom();
+      }
+    });
   });
 });
 
